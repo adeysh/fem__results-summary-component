@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 function App() {
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-center bg-white md:rounded-3xl">
+            <div className="flex flex-col md:flex-row justify-center bg-white md:rounded-3xl shadow-lg">
                 <ResultCard />
                 <div className="p-10 flex flex-col gap-6">
                     <SummaryCard />
