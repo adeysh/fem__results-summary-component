@@ -1,1 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+    --color-light-red: hsl(0, 100%, 67%);
+    --color-orangey-yellow: hsl(39, 100%, 56%);
+    --color-green-teal: hsl(166, 100%, 37%);
+    --color-cobalt-blue: hsl(234, 85%, 45%);
+
+    --color-light-slate-blue-bg: hsl(252, 100%, 67%);
+    --color-light-royal-blue-bg: hsl(241, 81%, 54%);
+
+    --color-violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --color-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-pale-blue: hsl(221, 100%, 96%);
+    --color-light-lavender: hsl(241, 100%, 89%);
+    --color-dark-gray-blue: hsl(224, 30%, 27%);
+
+    --text-body: 18px;
+    --font-sans: "Hanken Grotesk", sans-serif;
+
+    --text-result-title: clamp(1rem, 0.7rem + 1.3vw, 1.375rem);
+    --text-result-grade: clamp(1.125rem, 0.95rem + 0.9vw, 1.375rem);
+    --text-score-value: clamp(3rem, 2.46rem + 2.67vw, 3.75rem);
+    --text-score-label: clamp(0.875rem, 0.69rem + 0.89vw, 1.125rem);
+    --text-summary-label: clamp(0.875rem, 0.69rem + 0.89vw, 1.125rem);
+    --text-summary-title: clamp(1rem, 0.73rem + 1.33vw, 1.375rem);
+}
+
+@layer components {
+    .score-circle {
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9999px;
+        width: clamp(8.875rem, 5.535714285714286rem + 6.696428571428571vw, 14.75rem);
+        height: clamp(8.875rem, 5.535714285714286rem + 6.696428571428571vw, 14.75rem);
+        background-image: linear-gradient(
+            to bottom,
+            var(--color-violet-blue-circle),
+            var(--color-persian-blue-circle)
+        );
+    }
+}
+
+#root {
+    min-height: 100vh;
+    background-color: var(--color-pale-blue);
+}
+
+@media screen and (width >= 48rem) {
+    #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
