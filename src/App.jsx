@@ -4,7 +4,7 @@ import SummaryCard from "./components/SummaryCard";
 
 function App() {
     return (
-        <div className="flex flex-col md:flex-row justify-center bg-white md:rounded-r-3xl">
+        <div className="flex flex-col md:flex-row justify-center bg-white md:rounded-3xl">
             <ResultCard />
             <div className="p-10 flex flex-col gap-6">
                 <SummaryCard />
