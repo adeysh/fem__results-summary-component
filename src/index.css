@@ -52,6 +52,10 @@
     background-color: var(--color-pale-blue);
 }
 
+body {
+    position: relative;
+}
+
 @media screen and (width >= 48rem) {
     #root {
         display: flex;
