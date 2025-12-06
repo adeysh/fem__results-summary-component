@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Results Summary Component](https://www.frontendmentor.io/solutions/responsive-results-summary-component-using-react-and-tailwind-xKgetv6iXN)
+-   Live Site URL: [Results Summary Component](https://fem-results-summary-component-mauve.vercel.app/)
 
 ## My process
 
